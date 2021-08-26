@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>udemy_pageobject</groupId>
+  <artifactId>udemy_pageobject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+    <finalName>web-app</finalName>
+    <plugins>
+        <plugin>
+            <artifactId>maven-ear-plugin</artifactId>
+            <version>2.5</version>
+            <configuration>
+                <modules>
+                    <webModule>
+                        <groupId>com.company.xxx.myweb</groupId>
+                        <artifactId>my-web</artifactId>
+                        <contextRoot>/txcs</contextRoot>
+                    </webModule>                        
+                </modules>
+                <generateApplicationXml>true</generateApplicationXml>
+                <displayName>web-app</displayName>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+</project>
