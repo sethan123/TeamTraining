@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+    <test name="UnitTesting">
+        <classes>
+            <class name="Testng_Testing.UnitlevelTesting" />
+        </classes>
+    </test>
+    <test name="FunctionalTesting">
+        <classes>
+            <class name="Testng_Testing.Fuctional_Testing" />
+        </classes>
+    </test>
+    <test name="UITesting">
+        <classes>
+            <class name="Testng_Testing.UI_Testing" />
+        </classes>
+    </test>
+    <test name="SomeFeature">
+        <groups>
+            <run>
+                <include name="someFeature" />
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng_Testing.UnitlevelTesting" />
+            <class name="Testng_Testing.Fuctional_Testing" />
+            <class name="Testng_Testing.UI_Testing" />
+        </classes>
+    </test>
+</suite>
