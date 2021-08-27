@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17138" started-at="2021-08-27T10:04:16 IST" finished-at="2021-08-27T10:04:33 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17138" started-at="2021-08-27T10:04:16 IST" finished-at="2021-08-27T10:04:33 IST">
+      <class name="instgram.unfollowers">
+        <test-method status="PASS" signature="unfollow()[pri:0, instance:instgram.unfollowers@e320068]" name="unfollow" duration-ms="17092" started-at="2021-08-27T10:04:16 IST" finished-at="2021-08-27T10:04:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unfollow -->
+      </class> <!-- instgram.unfollowers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
