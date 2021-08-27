@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6957" started-at="2021-08-26T21:43:03 IST" finished-at="2021-08-26T21:43:10 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6957" started-at="2021-08-26T21:43:03 IST" finished-at="2021-08-26T21:43:10 IST">
+      <class name="seleninum3.frame_program1">
+        <test-method status="PASS" signature="f()[pri:0, instance:seleninum3.frame_program1@e320068]" name="f" duration-ms="6894" started-at="2021-08-26T21:43:03 IST" finished-at="2021-08-26T21:43:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- seleninum3.frame_program1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
