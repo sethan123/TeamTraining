@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test_Suite1">
+<test name="Smoke testing">
+<classes>
+<class name="com.example.test1_annotation">
+
+<method>
+		<exclude name="before_method1"/>	
+		</method>
+	
+</class>
+</classes>
+ </test>
+</suite>
