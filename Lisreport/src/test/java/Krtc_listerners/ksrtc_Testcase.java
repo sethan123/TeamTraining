@@ -34,9 +34,9 @@ public class ksrtc_Testcase {
 			
 			//selecting location
 			driver.findElement(By.xpath("//a[normalize-space()='Ballari - Bengaluru']")).click();
-			driver.findElement(By.xpath("//a[normalize-space()='24']")).click();
+			driver.findElement(By.xpath("//a[normalize-space()='31']")).click();
 			driver.findElement(By.id("txtReturnJourneyDate")).click();
-			driver.findElement(By.xpath("//a[normalize-space()='30']")).click();
+			driver.findElement(By.xpath("//a[normalize-space()='31']")).click();
 			
 			//selecting the check box.
 			driver.findElement(By.id("corover-close-btn")).click();
