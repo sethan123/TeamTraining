@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-30T16:12:10 IST" name="Suite" finished-at="2021-08-30T16:12:18 IST" duration-ms="8452">
+  <suite started-at="2021-08-30T17:08:26 IST" name="Suite" finished-at="2021-08-30T17:08:35 IST" duration-ms="8120">
     <groups>
     </groups>
-    <test started-at="2021-08-30T16:12:10 IST" name="App Testing" finished-at="2021-08-30T16:12:10 IST" duration-ms="10">
+    <test started-at="2021-08-30T17:08:26 IST" name="App Testing" finished-at="2021-08-30T17:08:26 IST" duration-ms="11">
     </test> <!-- App Testing -->
-    <test started-at="2021-08-30T16:12:10 IST" name="Validating navigation Bar" finished-at="2021-08-30T16:12:18 IST" duration-ms="8452">
+    <test started-at="2021-08-30T17:08:26 IST" name="Validating navigation Bar" finished-at="2021-08-30T17:08:35 IST" duration-ms="8120">
       <class name="Academy.validateNavigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateNavigationBar@7e8e8651]" started-at="2021-08-30T16:12:10 IST" name="initialize" finished-at="2021-08-30T16:12:16 IST" duration-ms="6174" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateNavigationBar@49ef32e0]" started-at="2021-08-30T17:08:26 IST" name="initialize" finished-at="2021-08-30T17:08:32 IST" duration-ms="5626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validateAppNavBar()[pri:0, instance:Academy.validateNavigationBar@7e8e8651]" started-at="2021-08-30T16:12:16 IST" name="validateAppNavBar" finished-at="2021-08-30T16:12:17 IST" duration-ms="1268" status="PASS">
+        <test-method signature="validateAppNavBar()[pri:0, instance:Academy.validateNavigationBar@49ef32e0]" started-at="2021-08-30T17:08:32 IST" name="validateAppNavBar" finished-at="2021-08-30T17:08:33 IST" duration-ms="1355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAppNavBar -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.validateNavigationBar@7e8e8651]" started-at="2021-08-30T16:12:17 IST" name="teardown" finished-at="2021-08-30T16:12:18 IST" duration-ms="995" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.validateNavigationBar@49ef32e0]" started-at="2021-08-30T17:08:33 IST" name="teardown" finished-at="2021-08-30T17:08:35 IST" duration-ms="1127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
