@@ -9,7 +9,7 @@ public class Alert_program1 {
 	
 
 	@Test
-	public void f() 
+	public void f() throws InterruptedException 
 {
 		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -20,7 +20,7 @@ public class Alert_program1 {
 		String msg =driver.switchTo().alert().getText();
 		System.out.println(msg);
 		driver.switchTo().alert().accept();
-		
+		Thread.sleep(-1000);
 		
 		//confirm alert
 		driver.findElement(By.xpath("//button[@onclick='confirmAlert()']")).click();
