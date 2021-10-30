@@ -31,15 +31,19 @@ public class program1Test {
     int d[]={1,2,3,4};
     System.out.println(d[5]);
     }
-    @Test (expected = IllegalArgumentException.class)
-    public void throwsExceptionWhenNegativeNumbersAreGiven() {
-        // act
-    	
-    	int a,b,c, add;
-    	a=-10;b=-5;c=6;
+    
+    /*@Test (expected = IllegalArgumentException.class)
+    //public void throwsExceptionWhenNegativeNumbersAreGiven() {
+    public void test3()  
+    // act
+    {
+    	int a,b;
+		float add;
+		float c;
+    	a=10;b=5;c=6.0f;
     	add=a+b+c;
     	System.out.println(add);
     	
-    }
+    }*/
 
 }

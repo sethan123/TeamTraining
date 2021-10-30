@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleninum3.Alert_program1">
+      <class name="seleninum3.check_box">
         <methods>
           <include name="f"/>
         </methods>
-      </class> <!-- seleninum3.Alert_program1 -->
+      </class> <!-- seleninum3.check_box -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

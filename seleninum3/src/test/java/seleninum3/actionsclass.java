@@ -15,7 +15,7 @@ public class actionsclass {
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./software1/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
