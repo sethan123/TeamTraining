@@ -3,4 +3,32 @@
   <groupId>DatabaseTesting</groupId>
   <artifactId>DatabaseTesting</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.27</version>
+</dependency>
+  
+  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+    <scope>test</scope>
+</dependency>
+  
+  
+  <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.12.0</version>
+</dependency>
+  
+  </dependencies>
+  
+  
 </project>

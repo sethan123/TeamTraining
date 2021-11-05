@@ -24,7 +24,7 @@ public class jdbcconnection {
 	
 	while(rs.next())
 	{
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sethan.g\\Downloads\\chromedriver_win32/chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://login.salesforce.com/?locale=eu");
 		
