@@ -11,7 +11,7 @@ import {ISkills} from './../services/ISkills';
 export class AboutComponent implements OnInit {
   age: number;
   
-  currentAddress: string = "Berlin, Germany - 10783";
+  currentAddress: string = "Navallur,Chennai-600130";
   _resumeUrl : IAbilities[]; 
   downloadResume : String;
   constructor(private skillsService: SkillsService) { }
@@ -19,7 +19,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
 
     var today: Date = new Date();
-    var birthday: Date = new Date(1994, 8, 28);
+    var birthday: Date = new Date(1999, 1, 15);
     
     var differenceInMilisecond = today.valueOf() - birthday.valueOf();
     
