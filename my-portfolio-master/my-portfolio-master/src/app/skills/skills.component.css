@@ -1,0 +1,26 @@
+.card-header {
+	padding: 0.4rem 0.80rem;
+	font-family: rancho;
+    font-size: 26px;
+	color: #00b386;
+	background: #fff;
+}
+.card-body .responsive-img {
+	margin: 8px 8px 0px 8px;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.img-right-padding {
+	padding-right: 20px;
+}
+.card{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	margin-bottom: 45px;
+}
+
+.card-body, .card-header {
+	margin-left: 10px;
+}
