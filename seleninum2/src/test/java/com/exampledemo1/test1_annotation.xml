@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name ="testsuite1">
+<test  name ="smoketesting1">
+<class name ="com.exampledemo1.test1_annotation">
+<method>
+
+</method>
+
+
+</class>
+
+
+</test>
+
+</suite>

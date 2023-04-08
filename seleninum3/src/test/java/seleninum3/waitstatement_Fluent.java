@@ -1,5 +1,6 @@
 package seleninum3;
 
+import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -24,13 +25,17 @@ public class waitstatement_Fluent {
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		FluentWait var= new FluentWait(driver);
 		
-		var.withTimeout(20, TimeUnit.SECONDS)
-		.pollingEvery(5,TimeUnit.SECONDS)
-		.ignoring(NoSuchElementException.class);
+		
+		
+		var.withTimeout(Duration.ofSeconds(30))
+		.pollingEvery(Duration.ofSeconds(30));
+		
+		
+		var.ignoring(NoSuchElementException.class);
 		
 		var.until(ExpectedConditions.alertIsPresent());
 		

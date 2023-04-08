@@ -11,7 +11,7 @@ public class Navigate_commands {
 	public void f() throws InterruptedException 
 {
 
-	System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 	driver.get("http://www.leafground.com/home.html");
 	driver.manage().window().maximize();

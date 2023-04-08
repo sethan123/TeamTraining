@@ -11,7 +11,7 @@ public class dropdown_selectbox {
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.leafground.com/home.html");
 		driver.findElement(By.xpath("//body/div[@id='wrapper']/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[5]/a[1]/img[1]")).click();

@@ -4,7 +4,9 @@ package seleninum3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class ksrtc {
@@ -12,13 +14,13 @@ public class ksrtc {
 	@Test
 	public void feed() throws InterruptedException 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://ksrtc.in/oprs-web/user/add.do");
 		//signin
 		driver.findElement(By.id("email")).sendKeys("sethanjo1501@gmail.com");
-		driver.findElement(By.id("fullName")).sendKeys("chethanjesi");
+	   driver.findElement(By.id("fullName")).sendKeys("chethanjesi");
 		driver.findElement(By.id("mobileNo")).sendKeys("9488392845");
 		driver.findElement(By.name("SaveBtn")).click();
 		driver.switchTo().alert().accept();
@@ -30,6 +32,20 @@ public class ksrtc {
 		driver.manage().window().maximize();
 		driver.findElement(By.id("userName")).sendKeys("sethanjo1501@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("Chethanjesi@143");
+		Thread.sleep(2000);
+		
+		
+		WebElement label = driver.findElement(By.xpath("//label[@for='TermsConditions']"));
+		
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.cssSelector("label[for='TermsConditions']"))).build().perform();
+		
+	//	new Actions(driver).moveToElement(label, 1, 1).click().perform();
+		
+		driver.findElement(By.className("custom-control custom-checkbox mb-3 text-center")).click();
+		Thread.sleep(2000);
+		
 		driver.findElement(By.id("submitBtn")).click();
 		
 		

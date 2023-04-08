@@ -1,6 +1,5 @@
 package seleninum3;
 
-import java.awt.Desktop.Action;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -15,7 +14,7 @@ public class actionsclass {
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "./software1/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

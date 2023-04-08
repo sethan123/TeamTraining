@@ -11,7 +11,7 @@ public class check_box {
 	@Test
 	public void f() 
 	{
-		System.setProperty("webdriver.chrome.driver", "./software1/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("http://www.leafground.com/home.html");

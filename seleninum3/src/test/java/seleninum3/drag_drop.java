@@ -13,7 +13,7 @@ public class drag_drop {
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		//driver.get("http://www.leafground.com/pages/drop.html");
 		

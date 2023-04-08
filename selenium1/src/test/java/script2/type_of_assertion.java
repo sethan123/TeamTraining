@@ -1,9 +1,14 @@
 package script2;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotSame;
 
-import org.junit.Test;
-
+import org.testng.annotations.Test;
 public class type_of_assertion {
 	
 	@Test        
