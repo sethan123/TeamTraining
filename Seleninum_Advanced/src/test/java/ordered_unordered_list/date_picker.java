@@ -6,17 +6,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class date_picker {
 	@Test
 	public void orderlist() throws InterruptedException 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/Datepicker.html");
+		
+		
 		
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("document.getElementById('datepicker1').value='29/08/2021'");
 		js.executeScript("document.getElementById('datepicker2').value='29/08/2021'");
+		driver.close();
 }
 }

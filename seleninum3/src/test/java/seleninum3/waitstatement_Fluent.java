@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class waitstatement_Fluent {
 	
 	//fluent wait--> Every second you are looking for the element to be reach on the appln-thread
@@ -25,7 +27,8 @@ public class waitstatement_Fluent {
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		FluentWait var= new FluentWait(driver);
 		

@@ -13,12 +13,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class waitstatement {
 	
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		//Implict wait --> through the script we can porvide a wait statement
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

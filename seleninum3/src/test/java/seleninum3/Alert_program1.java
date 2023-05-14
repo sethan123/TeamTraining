@@ -5,13 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Alert_program1 {
 	
 
 	@Test
 	public void f() throws InterruptedException 
 {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.leafground.com/home.html");
 		driver.findElement(By.xpath("//body/div[@id='wrapper']/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[9]/a[1]")).click();

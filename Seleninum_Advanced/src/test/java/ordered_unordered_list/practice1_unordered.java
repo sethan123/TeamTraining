@@ -1,5 +1,6 @@
 package ordered_unordered_list;
 
+import java.awt.Window;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,13 +9,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class practice1_unordered {
 	@Test
 	public void orderlist() throws InterruptedException 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/AutoComplete.html");
+		driver.manage().window().maximize();
 		driver.findElement(By.id("searchbox")).sendKeys("i");
 		Thread.sleep(2000);
 		List<WebElement> element2=  driver.findElements(By.xpath("//ul[@id='ui-id-1']/li"));	
@@ -28,6 +33,7 @@ public class practice1_unordered {
 			if(list_values.getText().equalsIgnoreCase("india"))
 			{
 				list_values.click();
+				System.out.println("Value are clicked");
 				break;
 			}
 		}
@@ -48,7 +54,8 @@ public class practice1_unordered {
 				break;
 			}
 }
-		
+	driver.close();  	
 		
 }
+	
 }

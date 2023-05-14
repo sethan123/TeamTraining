@@ -19,6 +19,7 @@ import Kstrc_Mainpage.Search_for_bus;
 import Kstrc_Mainpage.selecting_desitination;
 import elements.locators;
 import fuctionality.login;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class KSRTC_Value {
 
@@ -27,7 +28,8 @@ public class KSRTC_Value {
 {
 	
 
-	System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();
 	
 	driver.get("https://ksrtc.in/oprs-web/user/add.do");

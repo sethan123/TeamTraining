@@ -9,12 +9,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ordered_list {
 	
 	@Test
 	public void orderlist() throws InterruptedException 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/selectable.html");
 		//used to select the entire select options

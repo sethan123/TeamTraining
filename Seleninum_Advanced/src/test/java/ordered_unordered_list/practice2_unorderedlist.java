@@ -19,13 +19,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class practice2_unorderedlist {
 	
 	
 	@Test
 	public void orderlist() throws InterruptedException, AWTException, IOException 
 {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/Selectable.html");
 		

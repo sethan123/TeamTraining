@@ -6,12 +6,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Navigate_commands {
 	@Test
 	public void f() throws InterruptedException 
 {
 
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();
 	driver.get("http://www.leafground.com/home.html");
 	driver.manage().window().maximize();

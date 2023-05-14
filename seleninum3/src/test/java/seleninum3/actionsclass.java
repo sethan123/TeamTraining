@@ -9,12 +9,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class actionsclass {
 	
 	@Test
 	public void f() 
 {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		
 		WebDriver driver=new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

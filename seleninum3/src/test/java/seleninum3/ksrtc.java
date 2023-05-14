@@ -9,12 +9,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ksrtc {
 	
 	@Test
 	public void feed() throws InterruptedException 
 {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://ksrtc.in/oprs-web/user/add.do");
@@ -41,7 +44,7 @@ public class ksrtc {
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.cssSelector("label[for='TermsConditions']"))).build().perform();
 		
-	//	new Actions(driver).moveToElement(label, 1, 1).click().perform();
+		new Actions(driver).moveToElement(label, 1, 1).click().perform();
 		
 		driver.findElement(By.className("custom-control custom-checkbox mb-3 text-center")).click();
 		Thread.sleep(2000);

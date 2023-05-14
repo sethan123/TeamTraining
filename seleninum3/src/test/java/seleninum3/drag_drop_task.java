@@ -14,11 +14,13 @@ import org.testng.annotations.Test;
 
 import com.google.inject.spi.Element;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class drag_drop_task {
 	@Test
 	public void f_drag() 
 {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
