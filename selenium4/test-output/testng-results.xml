@@ -2,50 +2,53 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-03T09:40:15 IST" name="Default suite" finished-at="2021-09-03T09:40:56 IST" duration-ms="41038">
+  <suite started-at="2023-05-14T23:42:42 IST" name="Default suite" finished-at="2023-05-14T23:42:54 IST" duration-ms="12171">
     <groups>
     </groups>
-    <test started-at="2021-09-03T09:40:15 IST" name="Default test" finished-at="2021-09-03T09:40:56 IST" duration-ms="41038">
-      <class name="instgram.unfollowers">
-        <test-method signature="unfollow()[pri:0, instance:instgram.unfollowers@19d481b]" started-at="2021-09-03T09:40:15 IST" name="unfollow" finished-at="2021-09-03T09:40:56 IST" duration-ms="40970" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+    <test started-at="2023-05-14T23:42:42 IST" name="Default test" finished-at="2023-05-14T23:42:54 IST" duration-ms="12171">
+      <class name="selenium4.ksrtc">
+        <test-method signature="feed()[pri:0, instance:selenium4.ksrtc@7fee8714]" started-at="2023-05-14T23:42:42 IST" name="feed" finished-at="2023-05-14T23:42:54 IST" duration-ms="12108" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LP-5CG1225D1D', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+              <![CDATA[element click intercepted: Element <input type="checkbox" class="custom-control-input" id="TermsConditions"> is not clickable at point (710, 469). Other element would receive the click: <a href="/pages/reservation-terms.html" style="color: rgb(0,0,255)" '="">...</a>
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\sethan.g\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9bdee203f71ff9f94bb0e0098833f0ea
-*** Element info: {Using=xpath, value=/html/body/div[1]/section/main/div/div/div/section/div/button}]]>
+Command: [c65ccae04f9631dea07625755f57f192, clickElement {id=5CE4C3B8E44AA27EBD38D6B12F8E1BCB_element_103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\setha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50861/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c65ccae04f9631dea07625755f57f192)] -> xpath: //input[@id='TermsConditions']]
+Session ID: c65ccae04f9631dea07625755f57f192]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LP-5CG1225D1D', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" class="custom-control-input" id="TermsConditions"> is not clickable at point (710, 469). Other element would receive the click: <a href="/pages/reservation-terms.html" style="color: rgb(0,0,255)" '="">...</a>
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\sethan.g\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9bdee203f71ff9f94bb0e0098833f0ea
-*** Element info: {Using=xpath, value=/html/body/div[1]/section/main/div/div/div/section/div/button}
+Command: [c65ccae04f9631dea07625755f57f192, clickElement {id=5CE4C3B8E44AA27EBD38D6B12F8E1BCB_element_103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\setha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50861/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c65ccae04f9631dea07625755f57f192)] -> xpath: //input[@id='TermsConditions']]
+Session ID: c65ccae04f9631dea07625755f57f192
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at instgram.unfollowers.unfollow(unfollowers.java:33)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at selenium4.ksrtc.feed(ksrtc.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -72,11 +75,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- unfollow -->
-      </class> <!-- instgram.unfollowers -->
+        </test-method> <!-- feed -->
+      </class> <!-- selenium4.ksrtc -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="instgram.unfollowers">
+      <class name="selenium4.ksrtc">
         <methods>
-          <include name="unfollow"/>
+          <include name="feed"/>
         </methods>
-      </class> <!-- instgram.unfollowers -->
+      </class> <!-- selenium4.ksrtc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
