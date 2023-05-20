@@ -4,16 +4,20 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.sql.DriverManager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import jxl.read.biff.BiffException;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class Handling_window_machine {
-	public static void main(String[] args) throws InterruptedException, IOException, AWTException, BiffException , IOException {
-		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+	public static void main(String[] args) throws InterruptedException, IOException, AWTException,  IOException {
+		//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
@@ -21,7 +25,7 @@ public class Handling_window_machine {
 		
 		driver.findElement(By.id("pickfiles")).click();
 		
-		String file="C:\\Users\\sethan.g\\Downloads\\Training\\Selenium completed notes_Udemy.docx";
+		String file="D:\\DumpStack.docx";
 		
 		StringSelection select1=new StringSelection(file);
 		
