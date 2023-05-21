@@ -25,7 +25,8 @@ public class pagefactory_values {
     @FindBy(name="password")
     public static WebElement password;
    
-
+    @FindBy(xpath = "//input[@id='TermsConditions']")
+    public static WebElement termsAndCondition;
  
 
     @FindBy(id="submitBtn")

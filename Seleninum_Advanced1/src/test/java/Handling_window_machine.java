@@ -25,7 +25,7 @@ public class Handling_window_machine {
 		
 		driver.findElement(By.id("pickfiles")).click();
 		
-		String file="D:\\DumpStack.docx";
+		String file="D:\\ksdmckmckm.docx";
 		
 		StringSelection select1=new StringSelection(file);
 		
@@ -44,7 +44,12 @@ public class Handling_window_machine {
 		robot1.keyRelease(KeyEvent.VK_CONTROL);
 		
 		robot1.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@id='processTask']")).click();
+		Thread.sleep(4000);
 		
+		driver.findElement(By.xpath("//a[@id='pickfiles']")).click();
+		System.out.println("Downlaoded succesfuully");
+		driver.close();
 		 }
 	}

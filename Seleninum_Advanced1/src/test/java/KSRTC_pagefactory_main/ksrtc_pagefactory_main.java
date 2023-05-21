@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import KSRTC_pagefactory_values.pagefactory_values;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -16,7 +17,8 @@ public class ksrtc_pagefactory_main {
 		  @Test
 		  public void f() throws InterruptedException {
 		      
-			  System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+			  //System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+			  WebDriverManager.chromedriver().setup();
 				WebDriver driver=new ChromeDriver();
 		 
 
@@ -49,6 +51,7 @@ public class ksrtc_pagefactory_main {
 		      
 		      pagefactory_values.Sign.sendKeys("lalitaapawar2803@gmail.com");
 		      pagefactory_values.password.sendKeys("Lalita@1234");
+		      pagefactory_values.termsAndCondition.click();
 		      pagefactory_values.submitBtn.click();
 		      pagefactory_values.fromPlaceName.sendKeys("PUNE"+Keys.ARROW_DOWN+Keys.ENTER);
 		      pagefactory_values.toPlaceName.sendKeys("PUNE"+Keys.ARROW_DOWN+Keys.ENTER);

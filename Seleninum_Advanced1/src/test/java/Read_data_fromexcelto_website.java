@@ -5,34 +5,39 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.commons.io.input.WindowsLineEndingInputStream;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import jxl.read.biff.BiffException;
 
 public class Read_data_fromexcelto_website {
 
 	public static void main(String[] args) throws InterruptedException, IOException, AWTException, BiffException , IOException {
-	System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		
+		
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	
-	File file= new File("C:\\Users\\sethan.g\\Downloads\\data3.xlsx");
+	File file= new File("C:\\\\Users\\\\setha\\\\Downloads\\\\Book2.xls");
 	
 	FileInputStream inputStream = new FileInputStream(file);
-	XSSFWorkbook wb=new XSSFWorkbook(inputStream);
+	HSSFWorkbook wb=new HSSFWorkbook(inputStream);
     
     //creating a Sheet object
-    XSSFSheet sheet=wb.getSheet("STUDENT_DATA");
+    HSSFSheet sheet=wb.getSheet("STUDENT_DATA");
     
     //get all rows in the sheet
     int rowCount=sheet.getLastRowNum()-sheet.getFirstRowNum();
@@ -42,6 +47,7 @@ public class Read_data_fromexcelto_website {
     
     //Navigate to the URL
     driver1.get("https://demoqa.com/automation-practice-form");
+    driver.manage().window().maximize();
 
 
     //Identify the WebElements for the student registration form
@@ -76,7 +82,7 @@ public class Read_data_fromexcelto_website {
         WebElement confirmationMessage = driver1.findElement(By.xpath("//div[text()='Thanks for submitting the form']"));
         
         //create a new cell in the row at index 6
-        XSSFCell cell = sheet.getRow(i).createCell(6);
+        HSSFCell cell = sheet.getRow(i).createCell(6);
         
         //check if confirmation message is displayed
         if (confirmationMessage.isDisplayed()) {
@@ -89,7 +95,7 @@ public class Read_data_fromexcelto_website {
         }
         
         // Write the data back in the Excel file
-        FileOutputStream outputStream = new FileOutputStream("E:\\TestData\\TestData.xls");
+        FileOutputStream outputStream = new FileOutputStream("");
         wb.write(outputStream);
 
         //close the confirmation popup

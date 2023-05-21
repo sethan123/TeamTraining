@@ -8,16 +8,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class readdatafrom_apache {
 	
 	public class Read_apache {
 		  @Test
 		  public void f() throws Exception {
 		      
-			  System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+			  //System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+			  
+			  WebDriverManager.chromedriver().setup();
 				WebDriver driver=new ChromeDriver();
 				
-				 File file =    new File("C:\\Users\\sethan.g\\Downloads\\data.xlsx");
+				 File file =    new File("C:\\\\\\\\Users\\\\\\\\setha\\\\\\\\Downloads\\\\\\\\Book1.xls");
 			      
 			      FileInputStream fs = new FileInputStream(file);
 			      
