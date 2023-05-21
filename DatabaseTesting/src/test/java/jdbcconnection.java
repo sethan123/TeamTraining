@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class jdbcconnection {
@@ -24,7 +26,8 @@ public class jdbcconnection {
 	
 	while(rs.next())
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sethan.g\\Downloads\\chromedriver_win32/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\sethan.g\\Downloads\\chromedriver_win32/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://login.salesforce.com/?locale=eu");
 		
