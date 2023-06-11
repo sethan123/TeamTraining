@@ -3,9 +3,10 @@ package Listener_Demo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(Listener_Demo.ListenerTest.class)
 public class TestCases {
 	
@@ -16,6 +17,7 @@ public class TestCases {
 	public void Login() throws InterruptedException
 	
 	{
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://ksrtc.in/oprs-web/user/add.do");
 		//signin

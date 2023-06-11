@@ -3,27 +3,15 @@
   <groupId>Testng_listerner</groupId>
   <artifactId>Testng_listerner</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.20.1</version>
-           <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
-
+  
   <dependencies>
-
-
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <!--Testing-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
@@ -69,8 +57,80 @@
     <version>6.9.0</version>
 </dependency>
 
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!--End Testing-->
+        <!-- Selenium Drivers (all the desired browser drivers here) -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.8.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+	      
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>4.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>4.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20090211</version>
+        </dependency>
+        <!-- End Selenium Drivers (all the desired browser drivers here) -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+            <version>2.6.12</version>
+        </dependency>
+
+        
+    </dependencies>
+ <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.20.1</version>
+           <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  
 
 
-  </dependencies>
+
+
+
+
 </project>
 
