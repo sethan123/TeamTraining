@@ -1,12 +1,8 @@
 import java.net.MalformedURLException;
 import java.net.URL;
 
-
-
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
@@ -25,7 +21,7 @@ public class sauce_lab_Testing {
 
 	// TODO Auto-generated method stub
 
-
+		WebDriver driver;
 
 	DesiredCapabilities caps = DesiredCapabilities.chrome();
 
@@ -33,7 +29,7 @@ public class sauce_lab_Testing {
 
 	caps.setCapability("version", "51.0");
 
-	WebDriver driver=new RemoteWebDriver(new URL(URL), caps);
+	 driver=new RemoteWebDriver(new URL(URL), caps);
 
 	driver.get("http://google.com");
 
