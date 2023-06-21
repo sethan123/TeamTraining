@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ordered_unordered_list.practice2_unorderedlist">
+      <class name="Ksrtc_Value_page.KSRTC_Value">
         <methods>
-          <include name="orderlist"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- ordered_unordered_list.practice2_unorderedlist -->
+      </class> <!-- Ksrtc_Value_page.KSRTC_Value -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
