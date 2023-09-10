@@ -19,6 +19,7 @@ public class Alert_program1 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.leafground.com/home.html");
 		driver.findElement(By.xpath("//body/div[@id='wrapper']/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[9]/a[1]")).click();
+		
 		//Normal alert.
 		driver.findElement(By.xpath("//button[@onclick='normalAlert()']")).click();
 		String msg =driver.switchTo().alert().getText();

@@ -7,11 +7,16 @@ import org.testng.annotations.Test;
 public class calculateTest {
 calculate calc=new calculate();
 	
-	
+	@Test
+public void testAdd() {
+	assertEquals(10,calc.add(5, 5));
+}
+
+
 	@Test
 	public void testSub() {
 		assertEquals(10,calc.sub(15,5));
-
+		
 	}
 
 	@Test

@@ -2,13 +2,12 @@ package seleninum3;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -30,17 +29,18 @@ public class waitstatement_Fluent {
 		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
-		FluentWait var= new FluentWait(driver);
 		
 		
+//		FluentWait var= new FluentWait(driver);		
+//		var.withTimeout(Duration.ofSeconds(30))
+//		.pollingEvery(Duration.ofSeconds(30));
+
+		Wait<WebDriver> wait = new FluentWait<>(driver)
+				.withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(10))
+				.ignoring(NoSuchElementException.class);
 		
-		var.withTimeout(Duration.ofSeconds(30))
-		.pollingEvery(Duration.ofSeconds(30));
-		
-		
-		var.ignoring(NoSuchElementException.class);
-		
-		var.until(ExpectedConditions.alertIsPresent());
+		wait.until(ExpectedConditions.alertIsPresent());
 		
 		
 		driver.get("http://www.leafground.com/home.html");

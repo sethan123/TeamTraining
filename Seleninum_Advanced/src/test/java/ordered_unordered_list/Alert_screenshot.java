@@ -22,7 +22,7 @@ public class Alert_screenshot {
 	public void f() throws AWTException, IOException, InterruptedException 
 {
 		//System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
-WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://demo.automationtesting.in/Alerts.html");
@@ -33,7 +33,7 @@ WebDriverManager.chromedriver().setup();
 		
 		Rectangle rect1= new Rectangle(sc_size);
 		BufferedImage source=r1.createScreenCapture(rect1);
-		File Desitination = new File("F:\\Practice\\screen.jpg");
+		File Desitination = new File("E:\\screen.png");
 			ImageIO.write(source, "jpg",Desitination);
 			
 			

@@ -1,6 +1,6 @@
 package seleninum3;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,9 @@ public class actionsclass {
 		
 		WebDriver driver=new ChromeDriver();
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 		driver.get("http://www.leafground.com/pages/Edit.html");
 		
 		

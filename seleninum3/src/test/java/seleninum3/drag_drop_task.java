@@ -1,18 +1,14 @@
 package seleninum3;
 
-import java.awt.Robot;
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-
-import com.google.inject.spi.Element;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,12 +19,16 @@ public class drag_drop_task {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://www.leafground.com/pages/Edit.html");
 		driver.findElement(By.id("email")).sendKeys("chethanjesi");		
 		WebElement element1 = driver.findElement(By.id("email"));		
 		WebElement element = driver.findElement(By.cssSelector("input[value='Append ']"));
-		Actions act = new Actions(driver);
+		
+		
+		
+		  Actions act = new Actions(driver);
 	      act.doubleClick(element1).build().perform();
 	      act.keyDown(Keys.CONTROL).sendKeys("x").build().perform();
 	      act.click(element).keyDown(Keys.CONTROL).sendKeys("v").build().perform();
